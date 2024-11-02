@@ -9,7 +9,7 @@ export function rotate(nums, k) {
     }
 
     if (k > nums.length) {
-        k = k - nums.length
+        k = k % nums.length;
     }
 
     const copy = nums.slice();
